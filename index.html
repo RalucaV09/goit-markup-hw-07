@@ -14,16 +14,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&amp;family=Roboto:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mobile-styles.css" media="screen and (max-width: 768px)">
     <title>WebStudio</title>
   </head>
   <body class="body">
     <!--Header Section-->
     <header class="header">
-      <div class="container flex">
-        <nav class="nav-bar-container link flex ">
+      <div class="header-div container">
+        <nav class="nav-bar-container">
           <a class="logo link" href="./index.html">Web<span class="span-logo-header">Studio</span>
           </a>
-          <ul class="list flex">
+          <ul class="list nav-menu">
             <li><a href="./index.html" class="nav-list-item link first-menu-item">Studio</a></li>
             <li ><a href="./portfolio.html" class="nav-list-item link first-menu-item">Portfolio</a></li>
             <li><a href="" class="nav-list-item link first-menu-item">Contacts</a></li>
@@ -36,6 +37,31 @@
               <li><a href="tel:+110001111111" class="address-list link first-menu-item">+11 (000) 111-11-11</a></li>
             </ul> 
           </address>
+          <div class="ham-menu-div">
+            <svg
+              class="ham-menu-svg js-open-menu"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="22"
+              viewBox="0 0 32 22"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_297053_2156)">
+                <path
+                  d="M1.34766 20.0431H30.8861M1.34766 10.7354H30.8861M1.34766 1.42773H30.8861"
+                  stroke="#2E2F42"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_297053_2156">
+                  <rect width="32" height="22" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
       </div>
     </header>
     <!--Main section-->
@@ -251,7 +277,7 @@
               <p class="sectionfour-paragraph paragraph-four">UI Designer</p>
               <ul class="sociallist list">
                 <li class="taglisocials">
-                  <a class="tagasocials">
+                  <a class="tagasocials" href="">
                     <svg width="16" height="16" class="socials socialslinkclass social-icon">
                       <use class="" href="./images/icons.svg#icon-instagram-2"></use>
                     </svg>
@@ -267,7 +293,7 @@
                 </li>
                 
                 <li class="taglisocials">
-                  <a class="tagasocials">
+                  <a class="tagasocials" href="">
                     <svg width="16" height="16" class="socials socialslinkclass social-icon">
                       <use class="" href="./images/icons.svg#icon-facebook-1"></use>
                     </svg>
@@ -275,7 +301,7 @@
                 </li>
 
                 <li class="taglisocials">
-                  <a class="tagasocials">
+                  <a class="tagasocials" href="">
                     <svg width="16" height="16" class="socials socialslinkclass social-icon">
                       <use class="" href="./images/icons.svg#icon-linkedin-1"></use>
                     </svg>
@@ -290,8 +316,8 @@
     
 
     <!--Section5-->
-    <section class="sectionfives">
-      <div class="sectionfive container">
+    <section class="sectionfive">
+      <div class="container">
         <h2 class="section-five-title">Customers</h2>
         <ul class="customerlist list">
           <li class="customerlistitem"> 
@@ -303,7 +329,7 @@
           </li>
          
           <li class="customerlistitem">
-            <a class="customerlink">
+            <a class="customerlink" href="">
               <svg width="104" height="56" class="svg">
                 <use href="./images/icons.svg#icon-Logo-one"></use>
               </svg>
@@ -312,7 +338,7 @@
 
 
         <li class="customerlistitem"> 
-          <a class="customerlink">
+          <a class="customerlink" href="">
             <svg width="104" height="56" class="svg">
               <use href="./images/icons.svg#icon-Logo-two"></use>
             </svg>
@@ -320,7 +346,7 @@
         </li>
 
         <li class="customerlistitem">
-          <a class="customerlink">
+          <a class="customerlink" href="">
             <svg width="104" height="56" class="svg">
               <use href="./images/clientfoursprite.svg#icon-Client4"></use>
             </svg>
@@ -328,7 +354,7 @@
         </li>
 
         <li class="customerlistitem">
-          <a class="customerlink">
+          <a class="customerlink" href="">
             <svg width="104" height="56" class="svg">
               <use href="./images/icons.svg#icon-Logo-three"></use>
             </svg>
@@ -336,7 +362,7 @@
         </li>
 
         <li class="customerlistitem">
-          <a class="customerlink">
+          <a class="customerlink" href="">
             <svg width="104" height="56" class="svg">
               <use  href="./images/icons.svg#icon-Logo-four"></use>
             </svg>
@@ -352,20 +378,20 @@
     <footer class="footerstyle">
       <div class="container footercontainer">
       <div class="footerdiv1">
-            <a class="footer-logo link" href="./index.html">Web<span class="span-logo-footer">Studio</span></a>
+            <a  href="./index.html" class="footer-logo link">Web<span class="span-logo-footer">Studio</span></a>
           <p class="footerp">
             Increase the flow of customers and sales for your business with
             digital marketing & growth solutions.
           </p>
       </div>
         
-        <div class="container footercontainer">
+        <div class="container social-media-footer-div">
             <p class="socialmediafooterp">Social media</p>
             <ul class="socialfooterlist list">
               <li class="elementoffooterlist">
-                <a class="linkoffooterlist" href="">
+                <a  href="" class="linkoffooterlist">
                   <svg width="24" height="24" class="socialfootericon">
-                    <use class="footersocials" href="./images/icons.svg#icon-instagram-2"></use>
+                    <use  href="./images/icons.svg#icon-instagram-2" class="footersocials"></use>
                   </svg>
                 </a>
               </li>
@@ -373,7 +399,7 @@
               <li class="elementoffooterlist">
                 <a class="linkoffooterlist" href="">
                   <svg width="24" height="24" class="socialfootericon">
-                    <use class="footersocials" href="./images/icons.svg#icon-twitter-1"></use>
+                    <use  href="./images/icons.svg#icon-twitter-1" class="footersocials"></use>
                   </svg>
                 </a>
               </li>
@@ -381,7 +407,7 @@
               <li class="elementoffooterlist">
                 <a class="linkoffooterlist" href="">
                   <svg width="24" height="24" class="socialfootericon">
-                    <use class="footersocials" href="./images/icons.svg#icon-facebook-1"></use>
+                    <use  href="./images/icons.svg#icon-facebook-1" class="footersocials"></use>
                   </svg>
                 </a>
               </li>
@@ -389,7 +415,7 @@
               <li class="elementoffooterlist">
                 <a class="linkoffooterlist" href="">
                     <svg width="24" height="24" class="socialfootericon">
-                      <use class="footersocials" href="./images/icons.svg#icon-linkedin-1"></use>
+                      <use  href="./images/icons.svg#icon-linkedin-1" class="footersocials"></use>
                     </svg> 
                 </a>
               </li>
@@ -397,22 +423,18 @@
         </div>
         <div class="form">
           <p class="subscribe-p">Subscribe</p>
-          <form class="subscribe-form">
+          <form name="mailsub" class="subscribe-form">
             <label class="subscribe-label">
               <input placeholder="E-mail" name="email" type="email" class="subscribe-inp">
             </label>
-              <button class="subscribe-btn" type="submit" value="Submit">Subscribe
+              <button  type="submit" class="subscribe-btn">Subscribe
                 <svg width="24" height="24" class="subscribe-svg">
-                  <use href="./images/subscribe.svg#subscribe">
-                  </use></svg>
+                  <use href="./images/icon send.svg">
+                  </use>
+                </svg>
               </button>
-
-            
-
           </form>
-
         </div>
-
       </div>
     </footer>
 
@@ -480,16 +502,98 @@
         </button>
       </form>
         </div>
-
-      
     </div>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="js/mobile-menu.js"></script>
+    <!--Fereastra modala burger-->
+    <div class="burger-menu-div is-open js-menu-container">
+      <button type="button" class="burger-menu-button js-close-menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="8"
+          height="8"
+          viewBox="0 0 8 8"
+          fill="none"
+        >
+          <g clip-path="url(#clip0_628519_170)">
+            <path
+              d="M8 0.805714L7.19429 0L4 3.19429L0.805714 0L0 0.805714L3.19429 4L0 7.19429L0.805714 8L4 4.80571L7.19429 8L8 7.19429L4.80571 4L8 0.805714Z"
+              fill="#2E2F42"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_628519_170">
+              <rect width="8" height="8" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </button>
+      <nav class="nav-burger-menu">
+        <ul class="list nav-burger-menu-ul">
+          <li class="nav-burger-menu-li">
+            <a href="./index.html" class="link nav-burger-link">Studio</a>
+          </li>
+          <li>
+            <a href="./portfolio.html" class="link nav-burger-link"
+              >Portfolio</a
+            >
+          </li>
+          <li><a href="" class="link nav-burger-link">Contacts</a></li>
+        </ul>
+      </nav>
+      <address class="burger-menu-address">
+        <ul class="list burger-menu-address-ul">
+          <li>
+            <a
+              href="tel:+110001111111"
+              class="link burger-menu-address-link-phone"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li>
+            <a
+              href="mailto:info@devstudio.com"
+              class="link burger-menu-address-link-mail"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      
+        <ul class="socialfooterlist list burger-menu-media-ul">
+          <li class="elementoffooterlist">
+            <a  href="" class="linkoffooterlist">
+              <svg width="24" height="24" class="socialfootericon">
+                <use  href="./images/icons.svg#icon-instagram-2" class="footersocials"></use>
+              </svg>
+            </a>
+          </li>
+          
+          <li class="elementoffooterlist">
+            <a class="linkoffooterlist" href="">
+              <svg width="24" height="24" class="socialfootericon">
+                <use  href="./images/icons.svg#icon-twitter-1" class="footersocials"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="elementoffooterlist">
+            <a class="linkoffooterlist" href="">
+              <svg width="24" height="24" class="socialfootericon">
+                <use  href="./images/icons.svg#icon-facebook-1" class="footersocials"></use>
+              </svg>
+            </a>
+          </li>
+          
+          <li class="elementoffooterlist">
+            <a class="linkoffooterlist" href="">
+                <svg width="24" height="24" class="socialfootericon">
+                  <use  href="./images/icons.svg#icon-linkedin-1" class="footersocials"></use>
+                </svg> 
+            </a>
+          </li>
+        </ul>
+    </div>
+
+    <script defer src="./mobile-meniu.js"></script>
     <script src="./modal.js"></script>
 
   </body>
