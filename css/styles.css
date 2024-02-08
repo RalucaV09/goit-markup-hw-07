@@ -1083,6 +1083,8 @@ is-open{
    display: flex;
     padding: 16px 0px 16px 0px;
     align-items: center;
+    visibility: hidden;
+
   }
 
 .section-style{
@@ -1093,6 +1095,7 @@ is-open{
 .ham-menu-svg{
     cursor: pointer;
     gap: 56px;
+    
 }
 
 .section-title{
@@ -1209,6 +1212,7 @@ max-width: 768px;
 .burger-menu-div {
     /*display: block;
     position: fixed;*/
+    visibility: hidden;
     top: 0;
     left: 0;
     width: 100%;
@@ -1216,8 +1220,10 @@ max-width: 768px;
     background-color: white;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
       visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      visibility: hidden;
   }
   .burger-menu-button {
+    visibility: hidden;
     border: 1px solid rgba(0, 0, 0, 0.1);
     position: absolute;
     top: 24px;
@@ -1317,6 +1323,7 @@ max-width: 768px;
 }
 
 .ham-menu-div{
+    
     display: flex;
     padding: 16px 0px 16px 0px;
     align-items: center;
