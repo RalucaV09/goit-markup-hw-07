@@ -49,6 +49,7 @@ background-color:#FFFFFFFF;
     display: flex;
   align-items: center;
   text-decoration: none;
+  justify-content: space-between;
     
 }
 
@@ -160,12 +161,10 @@ display: inline-block;
 .ham-menu-svg {
     cursor: pointer;
     gap: 56px;
+    
+    
+    /*display:none;*/ 
 }
-
-.hamburger-div{
-    display: none;
-}
-
 
 
 .first-menu-item{
@@ -1083,8 +1082,6 @@ is-open{
    display: flex;
     padding: 16px 0px 16px 0px;
     align-items: center;
-    visibility: hidden;
-
   }
 
 .section-style{
@@ -1092,10 +1089,11 @@ is-open{
     padding: 112px 0px 124px 0px;
 }
 
-.ham-menu-svg{
+.ham-menu-svg {
     cursor: pointer;
     gap: 56px;
-    
+    fill: white;
+    border: none;
 }
 
 .section-title{
@@ -1332,6 +1330,8 @@ max-width: 768px;
 .ham-menu-svg {
     cursor: pointer;
     gap: 56px;
+    fill: white;
+    border: none;
   }
 
   .section-style{
